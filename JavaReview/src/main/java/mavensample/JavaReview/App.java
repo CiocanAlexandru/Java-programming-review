@@ -4,6 +4,6 @@ public class App
 {
     public static void main( String[] args )
     {
-        Lab1.problemeSolves();
+        Lab1.problemsSolved();
     }
 }
