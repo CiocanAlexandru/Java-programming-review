@@ -8,7 +8,7 @@ import org.junit.Test;
  */
 public class AppTest {
     @Test
-    public void test1() { // Numele metodei corectat
+    public void test1() {
         assertEquals(1, 1);
     }
 }
