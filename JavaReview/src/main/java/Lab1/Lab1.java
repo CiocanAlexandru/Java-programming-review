@@ -36,7 +36,7 @@ public void generateRandomNumber()
 	System.out.print("generateRandomNumber(): Generated value by Math.random is:" + randomNumber + "\n");
 }
 
-public void opertaionAponRandomNumber()
+public void operatiAponRandomNumber()
 {
 	this.randomNumber *= 3;
 	System.out.print("opertaionAponRandomNumber(): Multiply the number by 3 new value: " + this.randomNumber +"\n");

@@ -1,4 +1,4 @@
-<h1>Lab1 Problemes</h1>
+<h1>Lab1</h1>
 
 Write a Java application that implements the following operations:
 
