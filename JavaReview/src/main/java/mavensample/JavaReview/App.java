@@ -1,6 +1,7 @@
 package mavensample.JavaReview;
 import Lab1.Lab1;
 import Lab2.Lab2;
+import Lab3.Lab3;
 
 public class App 
 {
@@ -18,9 +19,15 @@ public class App
 		lab2Instance.problemsSolved();
 	}
 	
+	public static void problemsSolvedLab3()
+	{
+		Lab3 lab3Instance = new Lab3();
+		lab3Instance.problemsSolved();
+	}
+	
     public static void main( String[] args )
     {
-    	int labId = 2;
+    	int labId = 3;
     	switch (labId)
     	{
     		case 1:
@@ -33,6 +40,12 @@ public class App
     		{
     			System.out.print("Lab2 logs:\n");
     			problemsSolvedLab2();
+    			break;
+    		}
+    		case 3:
+    		{
+    			System.out.print("Lab3 logs:\n");
+    			problemsSolvedLab3();
     		}
     	}
     }
