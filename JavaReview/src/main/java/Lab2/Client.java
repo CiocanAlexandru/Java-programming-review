@@ -57,7 +57,7 @@ final public class Client
 	{
 		if (this == obj) 
 		{
-		    return false; 
+		    return true; 
 		}
 		if (obj == null || getClass() != obj.getClass()) 
 		{
@@ -66,6 +66,5 @@ final public class Client
 		
 		return this.name == ((Client)obj).name;
 	}
-	
-	
+		
 }

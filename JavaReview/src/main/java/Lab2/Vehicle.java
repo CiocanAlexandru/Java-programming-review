@@ -14,11 +14,10 @@ final public class Vehicle
 	
 	private int startWokingHour;
 	
-	public Vehicle(int id, Depot depot, int startWokingHour) 
+	public Vehicle(int id, int startWokingHour) 
 	{
 		super();
 		this.id = id;
-		this.depot = depot;
 		this.startWokingHour = startWokingHour;
 	}
 
@@ -52,10 +51,15 @@ final public class Vehicle
 		this.visitedClients = visitedClients;
 	}
 
+	public void addClinetsViseted(Client obj)
+	{
+		this.visitedClients.add(obj);
+	}
 
 	@Override
 	public String toString() {
-		return "Vehicle [depot=" + depot + ", visitedClients=" + visitedClients + ", startWokingHour=" + startWokingHour
+		String depotName = (depot != null) ? depot.getName() : "No Depot";
+		return "Vehicle [depot=" + depotName + ", visitedClients=" + visitedClients + ", startWokingHour=" + startWokingHour
 				+ "]";
 	}
 
@@ -64,7 +68,7 @@ final public class Vehicle
 	{
 		if (this == obj) 
 		{
-		    return false; 
+		    return true; 
 		}
 		if (obj == null || getClass() != obj.getClass()) 
 		{

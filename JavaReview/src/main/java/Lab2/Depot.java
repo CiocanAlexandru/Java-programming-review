@@ -37,7 +37,16 @@ public class Depot
 
 	public void addVehicle(Vehicle obj)
 	{
-		this.vehicleList.add(obj);
+		
+		if (!this.vehicleList.contains(obj))
+		{
+			this.vehicleList.add(obj);
+			obj.setDepot(this);
+		}
+		else
+		{
+			System.out.print("addVehicle(): Vehicle arleady assign in this depot!! " + obj);
+		}
 	}
 	
 	@Override
@@ -46,5 +55,4 @@ public class Depot
 		return "Depot [name=" + name + ", vehicleList=" + vehicleList + "]";
 	}
 	
-    
 }

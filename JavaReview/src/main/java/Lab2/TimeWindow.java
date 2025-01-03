@@ -1,5 +1,6 @@
 package Lab2;
 
+import java.util.Random;
 
 final public class TimeWindow 
 {
@@ -7,11 +8,19 @@ final public class TimeWindow
 	
 	private int endInterval;
 	
-	public TimeWindow(int beginInteval, int endInterval) 
+	public TimeWindow() 
 	{
-		super();
-		this.beginInteval = beginInteval;
-		this.endInterval = endInterval;
+		super();		
+		Random rand = new Random();
+
+		this.beginInteval = rand.nextInt(11) + 8;  
+        int duration = rand.nextInt(4) + 1;  
+        this.endInterval = this.beginInteval + duration;
+
+        if (this.endInterval > 22) 
+        {
+            this.endInterval = 22;
+        }
 	}
 	
 	public int getBeginInteval() 
