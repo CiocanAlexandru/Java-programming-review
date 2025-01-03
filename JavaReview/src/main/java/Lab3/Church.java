@@ -1,5 +1,6 @@
 package Lab3;
 
-public class Church {
+public class Church extends Location implements Visitable
+{
 
 }

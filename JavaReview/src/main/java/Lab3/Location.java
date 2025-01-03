@@ -1,5 +1,6 @@
 package Lab3;
 
-public class Location {
+public class Location 
+{
 
 }
