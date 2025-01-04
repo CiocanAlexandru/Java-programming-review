@@ -3,6 +3,7 @@ import Lab1.Lab1;
 import Lab2.Lab2;
 import Lab3.Lab3;
 import Lab4.Lab4;
+import Lab5.Lab5;
 
 public class App 
 {
@@ -33,9 +34,15 @@ public class App
 		
 	}
 	
+	public static void problemsSolvedLab5()
+	{
+		Lab5 lab5Instance = new Lab5();
+		lab5Instance.problemsSolved();
+	}
+	
     public static void main( String[] args )
     {
-    	int labId = 4;
+    	int labId = 5;
     	switch (labId)
     	{
     		case 1:
@@ -60,6 +67,12 @@ public class App
     		{
     			System.out.print("Lab4 logs:\n");
     			problemsSolvedLab4();
+    			break;
+    		}
+    		case 5:
+    		{
+    			System.out.print("Lab5 logs:\n");
+    			problemsSolvedLab5();
     			break;
     		}
     	}
