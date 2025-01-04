@@ -29,6 +29,7 @@ public class App
 	public static void problemsSolvedLab4()
 	{
 		Lab4 lab4Instance = new Lab4();
+		lab4Instance.problemsSolved();
 		
 	}
 	

@@ -11,7 +11,7 @@ public class Lab2 {
 	private Client [] clients;
 	private Vehicle [] vehicles;
 	
-	public int generateRandomHour()
+	private int generateRandomHour()
 	{
 		return (int)(Math.random()*1_000_00) % 10;
 	}
@@ -70,7 +70,7 @@ public class Lab2 {
 		
 	}
 	
-	public void heuristicSolution()
+	private void heuristicSolution()
 	{
 		//Create depots
         
