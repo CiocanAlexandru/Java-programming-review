@@ -6,40 +6,37 @@ import java.util.Map;
 
 public class Concert extends Atraction implements Visitable,Payable
 {
-	private double ticketPrice; 
-	private Map<LocalDate, TimeInterval> timeInterval = new HashMap<>();
+	private Map<LocalDate, TimeInterval> timeTable = new HashMap<>();
+	private double ticketPrice;
+
 	
-	public Map<LocalDate, TimeInterval> getTimeInterval() 
+	
+	public void setTimeTable(Map<LocalDate, TimeInterval> timeTable) 
 	{
-		return timeInterval;
+		this.timeTable = timeTable;
 	}
-	
-	public void setTimeInterval(Map<LocalDate, TimeInterval> timeInterval) 
-	{
-		this.timeInterval = timeInterval;
-	}
-	
+
 	public void setTicketPrice(double ticketPrice) 
 	{
 		this.ticketPrice = ticketPrice;
 	}
-	
+
 	@Override
-	public double getTicketPrice() {
-		// TODO Auto-generated method stub
-		return 0;
+	public double getTicketPrice() 
+	{
+		return this.ticketPrice;
 	}
+
 	@Override
-	public Map<LocalDate, TimeInterval> getTimetable() {
-		// TODO Auto-generated method stub
-		return null;
+	public Map<LocalDate, TimeInterval> getTimeTable() 
+	{
+		return this.timeTable;
 	}
-	
+
 	@Override
 	public String toString() 
 	{
-		return "Concert [ticketprice=" + ticketPrice + ", timeInterval=" + timeInterval + "]";
+		return "Concert [timeTable=" + timeTable + ", ticketPrice=" + ticketPrice + "]";
 	}
-	
 	
 }

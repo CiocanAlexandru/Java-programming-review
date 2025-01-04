@@ -7,11 +7,10 @@ import java.util.Map;
 
 public interface Visitable 
 {
-	Map<LocalDate, TimeInterval> getTimetable();
+	Map<LocalDate, TimeInterval> getTimeTable();
 	
 	default LocalTime openingDate(LocalDate Date)
 	{
-		LocalTime time = LocalTime.of(14, 30);
-		return time;
+		return this.getTimeTable().get(Date).getFirst();
 	}
 }
