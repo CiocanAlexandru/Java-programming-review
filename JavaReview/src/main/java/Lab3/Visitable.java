@@ -11,6 +11,10 @@ public interface Visitable
 	
 	default LocalTime openingDate(LocalDate Date)
 	{
+		if (this.getTimeTable() == null || !this.getTimeTable().containsKey(Date)) 
+		{
+            return LocalTime.of(0, 0);
+        }
 		return this.getTimeTable().get(Date).getFirst();
 	}
 }

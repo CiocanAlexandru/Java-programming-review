@@ -1,5 +1,5 @@
 <h1>Lab3</h1>
-Interfaces, Collections, Generics
+<h2>Interfaces, Collections, Generics</h2>
 A tourist is about to visit a city, in a period of time. In this city, there are various attractions: tourist sites, concerts, (football) games, etc. Each attraction has a name (title) and may have other common properties (such as a description, image, etc). Depending on its type, each location has various specific properties. If the location is a visitable, it must specify on what days of the week and at what hours is it open (can be visited, takes place, etc).
 If the location is payable, it must have the entry fee (the price of the ticket).
 

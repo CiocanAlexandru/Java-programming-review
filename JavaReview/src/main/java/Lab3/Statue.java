@@ -7,8 +7,20 @@ import java.util.Map;
 public class Statue extends Atraction implements Visitable
 {
 	private Map<LocalDate, TimeInterval> timeTable = new HashMap<>();
+	private String name;
 	
-	public void setTimeTable(Map<LocalDate, TimeInterval> timeTable) {
+	public String getName() 
+	{
+		return name;
+	}
+
+	public void setName(String name) 
+	{
+		this.name = name;
+	}
+
+	public void setTimeTable(Map<LocalDate, TimeInterval> timeTable) 
+	{
 		this.timeTable = timeTable;
 	}
 
@@ -19,9 +31,7 @@ public class Statue extends Atraction implements Visitable
 	}
 
 	@Override
-	public String toString() 
-	{
-		return "Statue [timeTable=" + timeTable + "]";
-	}
-	
+	public String toString() {
+		return "Statue [timeTable=" + timeTable + ", name=" + name + "]";
+	}	
 }

@@ -8,8 +8,6 @@ public class Concert extends Atraction implements Visitable,Payable
 {
 	private Map<LocalDate, TimeInterval> timeTable = new HashMap<>();
 	private double ticketPrice;
-
-	
 	
 	public void setTimeTable(Map<LocalDate, TimeInterval> timeTable) 
 	{
