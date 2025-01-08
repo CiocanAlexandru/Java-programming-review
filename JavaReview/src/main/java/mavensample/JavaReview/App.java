@@ -4,6 +4,8 @@ import Lab2.Lab2;
 import Lab3.Lab3;
 import Lab4.Lab4;
 import Lab5.Lab5;
+import Lab6.Lab6;
+import Lab7.Lab7;
 
 public class App 
 {
@@ -40,9 +42,21 @@ public class App
 		lab5Instance.problemsSolved();
 	}
 	
+	public static void problemsSolvedLab6()
+	{
+		Lab6 lab6Instance = new Lab6();
+		lab6Instance.problemsSolved();
+	}
+	
+	public static void problemsSolvedLab7()
+	{
+		Lab7 lab7Instance = new Lab7();
+		lab7Instance.problemsSolved();
+	}
+	
     public static void main( String[] args )
     {
-    	int labId = 5;
+    	int labId = 7;
     	switch (labId)
     	{
     		case 1:
@@ -73,6 +87,18 @@ public class App
     		{
     			System.out.print("Lab5 logs:\n");
     			problemsSolvedLab5();
+    			break;
+    		}
+    		case 6:
+    		{
+    			System.out.print("Lab6 logs:\n");
+    			problemsSolvedLab6();
+    			break;
+    		}
+    		case 7:
+    		{
+    			System.out.print("Lab7 logs:\n");
+    			problemsSolvedLab7();
     			break;
     		}
     	}
