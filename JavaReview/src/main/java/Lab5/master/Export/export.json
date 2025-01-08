@@ -1,0 +1,4 @@
+{
+  "Person [name=Alex, id=23]" : [ "file:///C:/Users/alexc/OneDrive/Desktop/Java%20Recapitulare/Java-programming-review/JavaReview/src/main/java/Lab5/master/Alex%2023/Example.txt", "file:///C:/Users/alexc/OneDrive/Desktop/Java%20Recapitulare/Java-programming-review/JavaReview/src/main/java/Lab5/master/Alex%2023/file.pdf", "file:///C:/Users/alexc/OneDrive/Desktop/Java%20Recapitulare/Java-programming-review/JavaReview/src/main/java/Lab5/master/Export/export.json" ],
+  "Person [name=Lucian, id=23]" : [ "file:///C:/Users/alexc/OneDrive/Desktop/Java%20Recapitulare/Java-programming-review/JavaReview/src/main/java/Lab5/master/Lucian%2023/content.txt" ]
+}

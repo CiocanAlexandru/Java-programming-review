@@ -1,6 +1,7 @@
 package Lab5;
 
 import java.nio.file.Paths;
+import java.util.Scanner;
 
 public class Lab5 {
 	
@@ -12,13 +13,40 @@ public class Lab5 {
 	    	FileService fileService = new FileService();
 	    	fileService.getDataFromPath(Paths.get(FILE_PATH));
 	    	CustomCommands exportCommand =  new ExportCommand(fileService); 
-	    	CustomCommands reportCommand = new ReportCommand(fileService);
+	    	CustomCommands reportCommand = new ReportCommand(fileService); 
 	    	CustomCommands viewCommand = new ViewCommand(fileService); 
 	    	
-	    	System.out.print("Comand info:\n");
-	    	exportCommand.help();
-	    	reportCommand.help();
-	    	viewCommand.help();
+	    	Scanner scanner = new Scanner(System.in);
 	    	
+	    	 while (true) 
+	    	 {
+	             System.out.print("Give me the command (export, view, help, exit): ");
+	             String commandInput = scanner.nextLine().trim();
+
+	             switch (commandInput.toLowerCase()) 
+	             {
+	                 case "export":
+	                     exportCommand.run();
+	                     break;
+	                 case "view":
+	                     viewCommand.run();
+	                     break;
+	                 case "report":
+	                	 reportCommand.run();
+	                	 break;
+	                 case "help":
+	                     System.out.println("Available commands:");
+	                     exportCommand.help();
+	                     viewCommand.help();
+	                     reportCommand.help();
+	                     break;
+	                 case "exit":
+	                     System.out.println("Exiting...");
+	                     scanner.close();
+	                     return;
+	                 default:
+	                     System.out.println("Unknown command. Type 'help' for a list of commands.");
+	             }
+	        }
 	    }
 }

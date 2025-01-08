@@ -3,6 +3,7 @@ package Lab5;
 public class ReportCommand implements CustomCommands
 {
 	private FileService fileService;
+	private final String EXPORT_TEMPLATE_PATH = "src/main/java/Lab5/master/Report/";
 	
 	public ReportCommand(FileService fileService) 
 	{
@@ -27,10 +28,9 @@ public class ReportCommand implements CustomCommands
 	}
 
 	@Override
-	public void run() 
-	{
-		
-	}
+    public void run() {
+        
+    }
 
 	@Override
 	public String toString() 
